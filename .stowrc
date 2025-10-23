@@ -1,0 +1,6 @@
+--dir=.
+--target=$HOME
+--verbose=1
+# (optional) examples:
+# --ignore='\.DS_Store'
+# --override=bin
