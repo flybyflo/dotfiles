@@ -9,7 +9,7 @@ gh auth login
 
 ## Dotfiles
 
-```shell
+```sh
 git clone git@github.com:flybyflo/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 git submodule update --init --recursive
@@ -20,7 +20,7 @@ stow */
 
 ## Update
 
-```shell
+```sh
 # Re-stow after changes:
 stow -R */
 
@@ -29,4 +29,14 @@ stow -D <package>
 
 # Unstow all packages:
 stow -D *
+```
+
+## Zsh + Oh My Zsh (Arch)
+
+```sh
+# Install zsh (and extra completions)
+sudo pacman -S zsh zsh-completions
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
