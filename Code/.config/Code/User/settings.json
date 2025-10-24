@@ -1,0 +1,161 @@
+{
+  "chat.agent.maxRequests": 100,
+  "chat.tools.terminal.autoApprove": {
+    "/\\(.+\\)/s": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/\\{.+\\}/s": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^Compare-[a-z0-9]/i": true,
+    "/^Format-[a-z0-9]/i": true,
+    "/^Measure-[a-z0-9]/i": true,
+    "/^Select-[a-z0-9]/i": true,
+    "/^Sort-[a-z0-9]/i": true,
+    "/^column\\b.*-c\\s+[0-9]{4,}/": false,
+    "/^date\\b.*(-s|--set)\\b/": false,
+    "/^find\\b.*-(delete|exec|execdir|fprint|fprintf|fls|ok|okdir)\\b/": false,
+    "/^git branch\\b.*-(d|D|m|M|-delete|-force)\\b/": false,
+    "/^sort\\b.*-(o|S)\\b/": false,
+    "/^tree\\b.*-o\\b/": false,
+    "/`.+`/s": {
+      "approve": false,
+      "matchCommandLine": true
+    },
+    "Get-ChildItem": true,
+    "Get-Content": true,
+    "Get-Date": true,
+    "Get-Location": true,
+    "Get-Random": true,
+    "Invoke-Expression": false,
+    "Invoke-RestMethod": false,
+    "Invoke-WebRequest": false,
+    "Join-Path": true,
+    "Remove-Item": false,
+    "Set-Acl": false,
+    "Set-ItemProperty": false,
+    "Split-Path": true,
+    "Start-Sleep": true,
+    "Stop-Process": false,
+    "Where-Object": true,
+    "Write-Host": true,
+    "Write-Output": true,
+    "basename": true,
+    "cat": true,
+    "cd": true,
+    "chmod": false,
+    "chown": false,
+    "cmp": true,
+    "column": true,
+    "curl": false,
+    "cut": true,
+    "date": true,
+    "dd": false,
+    "del": false,
+    "df": true,
+    "dirname": true,
+    "du": true,
+    "echo": true,
+    "erase": false,
+    "eval": false,
+    "file": true,
+    "find": true,
+    "findstr": true,
+    "git branch": true,
+    "git diff": true,
+    "git grep": true,
+    "git log": true,
+    "git show": true,
+    "git status": true,
+    "grep": true,
+    "head": true,
+    "iex": false,
+    "irm": false,
+    "iwr": false,
+    "jar": true,
+    "javap": true,
+    "jq": false,
+    "kill": false,
+    "ls": true,
+    "ps": false,
+    "pwd": true,
+    "rd": false,
+    "readlink": true,
+    "realpath": true,
+    "rg": true,
+    "ri": false,
+    "rm": false,
+    "rmdir": false,
+    "sleep": true,
+    "sort": true,
+    "sp": false,
+    "spps": false,
+    "stat": true,
+    "strings": true,
+    "tail": true,
+    "taskkill": false,
+    "taskkill.exe": false,
+    "top": false,
+    "tr": true,
+    "tree": true,
+    "wc": true,
+    "wget": false,
+    "which": true,
+    "xargs": false,
+    "pnpm": true,
+    "timeout": true
+  },
+  "docker.extension.enableComposeLanguageServer": false,
+  "editor.accessibilitySupport": "off",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.responsesApiReasoningEffort": "medium",
+  "github.copilot.chat.responsesApiReasoningSummary": "detailed",
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "terminal.integrated.suggest.enabled": true,
+
+  "biome.suggestInstallingGlobally": false,
+  "haskell.manageHLS": "GHCup",
+  "github.copilot.nextEditSuggestions.enabled": true,
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "zsh",
+            "icon": "terminal-linux"
+        },
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Xcode Default (Dark)",
+    "security.workspace.trust.untrustedFiles": "open",
+  "rust-analyzer.statusBar.showStatusBar": {
+    "documentSelector": [
+      {
+        "language": "rust"
+      },
+      {
+        "pattern": "**/Cargo.toml"
+      },
+      {
+        "pattern": "**/Cargo.lock"
+      },
+      {
+        "scheme": "output",
+        "pattern": "extension-output-rust-lang.rust-analyzer*"
+      }
+    ]
+  }
+}
